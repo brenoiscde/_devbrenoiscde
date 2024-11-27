@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --orange-color:rgb(255,119,22);
+    --grey-color:#222222;
+    --background-color:rgb(34,34,34);
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    background: var(--background-color);
+    background: radial-gradient(circle,var(--background-color) 0%, rgba(20,20,20,1) 100%);
+}
+html{
+    scroll-behavior: smooth;
+}
