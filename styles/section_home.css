@@ -4,6 +4,7 @@
     justify-content: center;
     gap: 25rem;
     margin-top: 5rem;
+    padding: 0 4rem;
 }
 .home__text {
     flex-direction: column;
@@ -52,6 +53,11 @@ a:hover{
         border-radius: 100%;
         width: 650px;
         border: 10px solid var(--background-color);
+    }
+}
+@media(max-width:1650px){
+    .home{
+        gap: 90px;
     }
 }
 @media(max-width:1300px){
