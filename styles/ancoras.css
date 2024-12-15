@@ -210,4 +210,7 @@
             font-size: 2.4rem;
         }
     }
+    .portfolio__project{
+        max-width: 85%;
+    }
 }
