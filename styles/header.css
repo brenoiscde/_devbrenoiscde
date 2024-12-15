@@ -27,20 +27,27 @@ nav{
 .mobile__menu{
     display: none;
     cursor: pointer;
-
-
 }
-.mobile__menu div{
-    width: 32px;
-    height: 2px;
-    background-color: #fff;
-    margin: 8px;
-}
+
 @media(max-width:350px){
     .mobile__menu{
         display: block;
     }
     .nav__list{
         display: none;
+    }
+}
+@media(max-width:425px){
+    .nav__list{
+        display: none;
+    }
+    .mobile__menu{
+        display: block;
+    }
+    .mobile__menu div{
+        width: 32px;
+        height: 2px;
+        background-color: #fff;
+        margin: 8px;
     }
 }
