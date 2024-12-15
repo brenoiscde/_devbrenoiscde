@@ -1,0 +1,127 @@
+.contact{
+    display: flex;
+    justify-content: center; 
+}
+.container__contact{
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--orange-color);
+    padding: 2.5rem 0.5rem;
+    margin-top: 4rem;
+    max-width: 50%;
+    text-align: center;
+    border-radius: 17px;
+}
+.container__contact__falecomigo{
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 55%;
+    h2{
+        color:white;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        color: white;
+        max-width: 60%;
+        margin-bottom: 2rem;
+    }
+}
+.container__contact__send{
+    display: flex;
+    align-items:center;
+    gap: 1rem;
+    
+    img{
+        width: 35px;
+    }
+    h2{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+}
+.container__contact__sendemail{
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    textarea{
+        width: 100%; 
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: vertical; 
+        font-family: "DM Sans", sans-serif;
+    }
+    h2{
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    input{
+        padding: 0.7rem 1rem;
+        font-size: 18px;
+        border-radius: 7px;
+        border-style: none;
+    }
+    button{
+        border-radius: 7px;
+        border-style: none;
+        padding: 0.5rem;
+        background-color: var(--orange-color);
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .input__mensage{
+        height: 90%;
+    }
+}
+
+@media(max-width:1500px){
+    .container__contact{
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+        max-width: 80%;
+    }
+    .container__contact__sendemail{
+        width: 100%;
+        h2{
+            margin-top: 2rem;
+        }
+        form{
+            width: 100%;
+        }
+    }
+    .container__contact__falecomigo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+        padding: 0 2rem;
+
+        p{
+            max-width: none;
+        }
+    }
+}
+@media(max-width:480px){
+    .container__contact__falecomigo{
+     
+            p{
+            max-width: none;
+        }
+    }
+    .container__contact__send{
+        flex-direction: column;
+        h2{
+            display: none;
+        }
+    }
+}
