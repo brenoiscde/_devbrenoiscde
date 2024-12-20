@@ -1,4 +1,4 @@
-.aboutme{
+#aboutme{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -23,13 +23,13 @@
     }
 }
 @media(max-width:1000px){
-    .aboutme{
+    #aboutme{
         p{
             max-width: 70%;
         }
     }
 }
-.skillandexperience{
+#skillandexperience{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -79,7 +79,7 @@
     }
 }
 @media(max-width:750px){
-    .skillandexperience{
+    #skillandexperience{
         text-align: center;
         padding: 0 2.3rem;
     }
@@ -93,7 +93,7 @@
         padding: 2rem 2.3rem;
     }
 }
-.portfolio{
+#portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,7 +205,7 @@
     }
 }
 @media(max-width:400px){
-    .portfolio{
+    #portfolio{
         h2{
             font-size: 2.4rem;
         }
@@ -214,7 +214,7 @@
         max-width: 85%;
     }
 }
-.Carrer{
+#carrer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,13 +288,13 @@
     }
 }
 @media(max-width:440px){
-    .Carrer{
+    #carrer{
         h2{
             font-size: 1.7rem;
         }
     }
 }
-.feedback{
+#feedback{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -344,7 +344,7 @@
     margin-top: 2rem;
 }
 .depoimento__profile__name{
-    line-height: 5px;
+    line-height: 17px;
     h2{
         font-size: 1.3rem;
     }
