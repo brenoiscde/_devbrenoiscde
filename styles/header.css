@@ -5,7 +5,7 @@ a{
 }
 a:hover{
     color: var(--orange-color);
-    transform: scale(1.5);
+    transform: scale(1.05);
 }
 .logo{
     font-size: 2rem;

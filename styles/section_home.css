@@ -20,7 +20,7 @@
         font-weight: 400;
         margin-bottom: 10px;
     }
-    a{
+    .home__ancora-whats{
         border: 1px solid var(--orange-color);
         font-size: 1.3rem;
         display: flex;
@@ -35,7 +35,7 @@
         height: 25px;
     }
 }
-a:hover{
+.home__ancora-whats:hover{
     transform: scale(1.03);
 }
 .home__redes-sociais{

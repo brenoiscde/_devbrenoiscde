@@ -29,15 +29,15 @@ function renderProjects(projects, divProjects){
         return`
             <div class="portfolio__project">
                 <div class="portfolio__project__header">
-                    <h2>${project.nome}</h2>
-                    <img src="/assets/github-142-svgrepo-com (1).svg" alt="icon-github">
+                    <h2 class="portfolio__header__title">${project.nome}</h2>
+                    <a href=${project.linkGihubProject} target="_blank"><img src="/assets/github-142-svgrepo-com (1).svg" alt="icon-github"></a>
                 </div>
                 <h3>Descrição do projeto</h3>
                 <p>${project.description}</p>
                 <div class="portfolio__project__tecnology">
-                    <span>${project.listTec.join(' ')}</span>
+                    <span>${project.listTec.join(" ")}</span>
                 </div>
-                <a href="">Ver projeto</a>
+                <a class="portfolio__project__ver-projeto" href=${project.linkProject} target= "_blank" >Ver projeto</a>
                 <img class="portfolio__project__image" src=${project.photo} alt="image-project">
             </div>
         `

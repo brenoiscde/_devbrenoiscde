@@ -100,7 +100,7 @@
     margin-top: 3.5rem;
 
     span{
-        color: var(--orange-color);
+        color: white;
         border: 1px solid var(--orange-color);
         padding: 5px 2rem;
         border-radius: 17px;
@@ -130,11 +130,13 @@
     border-radius: 17px;
     transition: transform 0.3s ease;
     max-width: 25%;
+    justify-content: space-between;
 
 
     .portfolio__project__header{
         display: flex;
-        gap: 2rem;
+        align-items: center;
+        gap: 3rem;
         max-width: max-content;
     }
     h2{
@@ -159,7 +161,7 @@
         text-align: start;
         font-size: 16px;
     }
-    a{
+    .portfolio__project__ver-projeto{
         border: 1px solid var(--orange-color);
         padding: 7px 17px;
         max-width: max-content;
@@ -181,12 +183,21 @@
     display: flex;
     gap: 1rem;
     max-width: max-content;
+
     span{
+        color: #fff;
         background-color: var(--orange-color);
-        color: white;
         font-weight: 600;
         padding: 7px 17px;
         margin-top: 1rem;
+    }
+    
+}
+@media(max-width:1750px){
+    .portfolio__project{
+        .portfolio__project__header{
+            display: block;
+        }
     }
 }
 @media(max-width:1500px){
