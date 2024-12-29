@@ -81,6 +81,14 @@
     .input__mensage{
         height: 90%;
     }
+    label{
+        position: absolute;
+        left: 50px;
+        top: 65px;
+
+        padding: 0px 50px;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
 }
 
 @media(max-width:1500px){
