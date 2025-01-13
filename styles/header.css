@@ -7,6 +7,15 @@ a:hover{
     color: var(--orange-color);
     transform: scale(1.05);
 }
+.button-theme{
+    background: none;
+    border-style: none;
+}
+.icon-theme{
+    width: 35px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
 .logo{
     font-size: 2rem;
     color: #fff;
@@ -15,7 +24,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--background-color);
+    background-color: var(--color-header);
     height: 8vh;
 }
 .nav__list{

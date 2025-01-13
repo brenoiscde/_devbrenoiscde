@@ -1,5 +1,30 @@
 import { listProjects } from "./mock/projects.js";
 
+const iconTheme = document.querySelector('.icon-theme');
+const buttonChangeTheme = document.querySelector('.button-theme');
+const html = document.querySelector('html');
+const iconInstaHome = document.querySelector('.insta-home'); 
+const inconLikedinHome = document.querySelector('.linkedin-home');
+const iconGitHub = document.querySelector('.github-home');
+
+buttonChangeTheme.addEventListener('click', ()=>{
+    let srcImage = iconTheme.getAttribute('src');
+    if (srcImage == '/assets/sun-2-svgrepo-com.svg'){
+        html.setAttribute('theme', 'light');
+        iconTheme.setAttribute('src', "/assets/moon-svgrepo-com.svg");
+        iconInstaHome.setAttribute('src', '/assets/instagram-black.svg')
+        inconLikedinHome.setAttribute('src', '/assets/linkedin-black-com.svg');
+        iconGitHub.setAttribute('src', '/assets/github-black.svg')
+    }
+    else{
+        html.setAttribute('theme', 'dark');
+        iconTheme.setAttribute('src', "/assets/sun-2-svgrepo-com.svg");
+        iconInstaHome.setAttribute('src', '/assets/instagram-svgrepo-com.svg')
+        inconLikedinHome.setAttribute('src', '/assets/linkedin-svgrepo-com.svg');
+        iconGitHub.setAttribute('src', '/assets/github.svg')
+    }
+}) 
+
 function removeLi(){
     if(window.innerWidth <= 1000){
         const liDepoimento = document.querySelector('ul li:nth-child(6)');
@@ -30,7 +55,7 @@ function renderProjects(projects, divProjects){
             <div class="portfolio__project">
                 <div class="portfolio__project__header">
                     <h2 class="portfolio__header__title">${project.nome}</h2>
-                    <a href=${project.linkGihubProject} target="_blank"><img src="/assets/github-142-svgrepo-com (1).svg" alt="icon-github"></a>
+                    <a href=${project.linkGihubProject} target="_blank"><img src="/assets/github.svg" alt="icon-github"></a>
                 </div>
                 <h3>Descrição do projeto</h3>
                 <p>${project.description}</p>
@@ -43,5 +68,6 @@ function renderProjects(projects, divProjects){
         `
     })
 }
-renderProjects(listProjects,".portfolio__projects")
+renderProjects(listProjects,".portfolio__projects");
+
 

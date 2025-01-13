@@ -7,16 +7,38 @@
 }
 :root{
     --orange-color:rgb(255,119,22);
-    --grey-color:#222222;
     --light-grey-color:#808072;
     --background-color:rgb(34,34,34);
     --color-grey-paragraph:#808080;
 }
 body{
     font-family: "DM Sans", sans-serif;
-    background: var(--background-color);
-    background: radial-gradient(circle,var(--background-color) 0%, rgba(20,20,20,1) 100%);
+    background: var(--background-dark)
 }
 html{
     scroll-behavior: smooth;
+}
+[theme = "dark"]{
+    --color-text:#fff;
+    --text:#fff;
+    --contactTitle-descriptionProject:#fff;
+    --color-whatsapp:#fff;
+    --color-header:rgb(34,34,34);
+    --background-color-dark:rgb(34,34,34);
+    --color-grey-paragraph-dark:#808080;
+    --light-grey-color:#808072;
+    --subtitle:#fff;
+    --background-dark: radial-gradient(circle,var(--background-color-dark) 0%, rgba(20,20,20,1) 100%);
+}
+[theme = "light"]{
+    --color-text:#000;
+    --text:#808072;
+    --contactTitle-descriptionProject:#000;
+    --color-whatsapp:#808072;
+    --color-header:#767676;
+    --background-color-light:#E9E9E9;
+    --color-grey-paragraph-light:#E9E9E9;
+    --light-grey-color:#808072;
+    --subtitle:#808072;
+    --background-light: radial-gradient(circle,var(--background-color-dark) 0%, rgba(20,20,20,1) 100%);
 }
