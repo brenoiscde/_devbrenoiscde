@@ -57,7 +57,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    border: 1px solid white;
+    border: 1px solid var(--border-skills);
+    background-color: var(--background-div-skills);
     padding: 2rem 5rem;
     border-radius: 30px;
     margin-bottom: 4rem;
@@ -70,7 +71,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    border: 1px solid white;
+    border: 1px solid var(--border-skills);
+    background-color: var(--background-div-skills);
     padding: 2rem 5rem;
     border-radius: 30px;
     img{
@@ -168,6 +170,7 @@
         border-radius: 17px;
         margin-top: 0.7rem;
         cursor: pointer;
+        color: var(--color-text);
     }
     .portfolio__project__image{
         width: auto;

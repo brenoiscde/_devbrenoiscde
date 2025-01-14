@@ -38,6 +38,7 @@
         width: 35px;
     }
     h2{
+        color: var(--color-text);
         font-size: 1.3rem;
         margin-bottom: 0;
         font-weight: 400;
@@ -60,14 +61,14 @@
         font-family: "DM Sans", sans-serif;
     }
     h2{
-        color: white;
+        color: var(--color-text);
         margin-bottom: 1.5rem;
     }
     input{
         padding: 0.7rem 1rem;
         font-size: 18px;
         border-radius: 7px;
-        border-style: none;
+        
     }
     button{
         border-radius: 7px;
